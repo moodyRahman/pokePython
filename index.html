@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Input</title>
+      <link rel="stylesheet" href="style.css">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style>
+
+        </style>
+  </head>
+  <body>
+  <div class="overlay"></div>
+  <div class="terminal">
+
+      BY YONG HO LEE AND MOUDUDUR "MOODY" RAHMAN <br><br>
+
+      <div class="title">
+      smogon university released data on the popularity of pokemon in pokemon showdown <br>
+      this project is to collect and analyze the data in a user friendly interface<br><br><br> </div>
+
+      <div>
+        <a href="http://marge.stuy.edu/~mrahman01/yonghopostmoody/info.html">FAQ</a>
+        <br> <br>
+      </div>
+
+      <form method="GET" action="formhandler.py">
+        <div class="subtitle">What year data?</div>
+      	<select class="selector" name="time">
+    		<option value = "1501">January, 2015</option>
+    		<option value = "1506">June, 2015</option>
+    		<option value = "1601">January, 2016</option>
+            <option value = "1606">June, 2016</option>
+            <option value = "1701">January, 2017</option>
+    	</select>
+
+        <br> <br>
+        <div class="subtitle">What kind of battle data?</div>
+    	<select class="selector" name="type">
+    		<option value = "1v1">1v1</option>
+    		<option value = "ou">overused</option>
+    		<option value = "monotype">monotype</option>
+    		<option value = "battlefactory">battlefactory</option>
+    	</select> <br> <br>
+
+        <div class="subtitle" style="border-style: solid; border-color: #80ff80;"><br>
+
+            <input type="radio" name="calcMethod" value="specific"> One specific pokemon?<br>
+            &nbsp &nbsp &nbsp Which one? <input type="text" name="selectedPoke" class="text">
+
+            <br><br>
+
+            <input type="radio" name="calcMethod" value="ranking"> Pokemon at specific rank?<br>
+            &nbsp &nbsp &nbsp What rank? <input type="text" name="selectedRank" class="text">
+
+            <br><br>
+
+            <input type="radio" name="calcMethod" value="general"> Output all of the selected data
+
+            <br><br>
+
+        </div>
+
+        <br>
+    	<input id="submit" type="submit" name="varname" value="I'm done.">
+      </form>
+  </div>
+</body>
+</html>
